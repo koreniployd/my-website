@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой первый сайт</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Физика и формулы</title>
+
+  <!-- Подключаем MathJax для поддержки LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 50px;
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      background-color: #f0f0f0;
+      color: #222;
+      max-width: 800px;
+      margin: auto;
     }
     h1 {
-      color: #333;
+      text-align: center;
     }
     img {
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      margin-top: 20px;
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
     }
-    a {
-      color: #007acc;
-      text-decoration: none;
+    .formula {
+      font-size: 1.3em;
+      color: #0066cc;
+      margin: 20px 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Привет, GitHub Pages!</h1>
-  <p>Это мой первый сайт, размещённый на <strong>GitHub</strong>.</p>
 
-  <!-- Картинка -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/640px-PNG_transparency_demonstration_1.png" alt="Пример картинки">
+  <h1>Пример научной HTML-страницы</h1>
 
-  <p><a href="https://github.com/">Перейти на GitHub</a></p>
+  <p>Это пример сайта, где используются текст, формулы и изображения. Ниже показана классическая формула Эйнштейна:</p>
+
+  <div class="formula">
+    $$E = mc^2$$
+  </div>
+
+  <p>Также можно вставлять более сложные выражения. Например, формула площади круга:</p>
+
+  <div class="formula">
+    $$S = \pi r^2$$
+  </div>
+
+  <p>Ниже — пример изображения:</p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Circle_-_black_simple.svg/768px-Circle_-_black_simple.svg.png" alt="Картинка круга">
+
+  <p>Ты можешь вставить сюда любые свои формулы и картинки. Этот сайт можно разместить на GitHub Pages.</p>
+
 </body>
 </html>
